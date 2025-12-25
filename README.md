@@ -44,7 +44,7 @@ pip install -r requirements.txt
 2. Launch the web interface:
 ```bash
 python web_server.py
-# Then open http://localhost:5000 in your browser
+# Then open http://localhost:5001 in your browser
 ```
 
 Or use the CLI:
@@ -53,6 +53,72 @@ python cli.py analyze owner/repo
 ```
 
 **See [LAUNCH.md](LAUNCH.md) for detailed launch instructions.**
+
+## 🖥️ Web Interface
+
+The GitHub Repo Agent features a beautiful, modern web interface that provides comprehensive repository analysis at a glance:
+
+### Interface Overview
+
+**Header Section:**
+- Clean, gradient header with the application title and rocket icon
+- Subtitle: "Analyze any GitHub repository and get intelligent recommendations - No API keys needed!"
+
+**Input Section:**
+- Simple, intuitive input field for repository URLs
+- Accepts both formats: `owner/repo` or full GitHub URLs
+- One-click "Analyze Repository" button with magnifying glass icon
+
+**Analysis Results Display:**
+
+1. **📊 Overview Section**
+   - Repository name and clickable GitHub URL
+   - Quick reference to the analyzed repository
+
+2. **📝 Languages Section**
+   - Visual language distribution with percentage badges
+   - Color-coded tags showing each language's contribution
+   - Example: `python: 97.6%`, `html: 2.4%`
+
+3. **🏗️ Structure Section**
+   - Repository component indicators with status badges:
+     - ✅ **README** (green) - Documentation present
+     - ⚠️ **LICENSE** (orange) - License file status
+     - ✅ **CI/CD** (blue) - Continuous integration setup
+     - ✅ **Tests** (green) - Test directory presence
+
+4. **🎯 Patterns Section**
+   - Technology and architecture patterns detected:
+     - REST API, MVC, Docker, Flask, Django
+     - Testing frameworks, CI/CD patterns
+     - All displayed as informative blue badges
+
+5. **💡 Recommendations Section**
+   - Priority-based actionable recommendations
+   - Each recommendation includes:
+     - **Title**: Clear action item (e.g., "Add a LICENSE file")
+     - **Category**: Legal, CI/CD, Code Quality, Testing, Security
+     - **Action**: Specific steps to implement
+     - **Priority indicators**: Color-coded by importance
+   - Examples:
+     - Add LICENSE file (Legal category)
+     - Set up Continuous Integration (CI/CD category)
+     - Add type hints (Code Quality category)
+     - Increase test coverage (Testing category)
+     - Security scanning integration (Security category)
+
+6. **🤖 AI Insights Section**
+   - Architecture assessment with maturity level
+   - Next steps for improvement
+   - Intelligent analysis of codebase quality
+
+### Design Features
+
+- **Modern UI**: Clean white background with purple/blue gradient accents
+- **Responsive Design**: Works on desktop and mobile devices
+- **Color-Coded Status**: Visual indicators for quick scanning
+- **Organized Layout**: Information grouped logically for easy reading
+- **No Authentication Required**: Public repositories can be analyzed instantly
 
 3. (Optional) Set up GitHub token for private repositories:
 ```bash
@@ -262,7 +328,7 @@ github-repo-agent/
 - [ ] Integration with code quality tools (SonarQube, CodeClimate)
 - [ ] Support for multiple repositories comparison
 - [ ] Historical analysis and trend tracking
-- [ ] Web dashboard interface
+- [x] Web dashboard interface ✅
 - [ ] Slack/Teams integration for notifications
 - [ ] Automated PR creation for quick wins
 
