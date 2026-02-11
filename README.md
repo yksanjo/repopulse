@@ -6,9 +6,9 @@
 https://github.com/owner/repo ──► 10 seconds ──► 📊 full breakdown
 ```
 
-[![Build Status](https://img.shields.io/github/actions/workflow/status/yksanjo/github-repo-agent/ci.yml?branch=main&style=flat-square)](https://github.com/yksanjo/github-repo-agent/actions)
-[![Version](https://img.shields.io/github/v/release/yksanjo/github-repo-agent?style=flat-square)](https://github.com/yksanjo/github-repo-agent/releases)
-[![License](https://img.shields.io/github/license/yksanjo/github-repo-agent?style=flat-square)](LICENSE)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/yksanjo/repopulse/ci.yml?branch=main&style=flat-square)](https://github.com/yksanjo/repopulse/actions)
+[![Version](https://img.shields.io/github/v/release/yksanjo/repopulse?style=flat-square)](https://github.com/yksanjo/repopulse/releases)
+[![License](https://img.shields.io/github/license/yksanjo/repopulse?style=flat-square)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.8+-blue.svg?style=flat-square)](https://python.org)
 
 [🚀 Live Demo](https://repo-agent-demo.vercel.app) · [📖 API Docs](#api) · [💬 Discord](https://discord.gg/repo-agent)
@@ -111,21 +111,21 @@ python cli.py compare reduxjs/redux pmndrs/zustand
 
 ### Option 1: One-Click Deploy
 
-[![Deploy on Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/yksanjo/github-repo-agent)
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/github-repo-agent)
+[![Deploy on Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/yksanjo/repopulse)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/repopulse)
 
 ### Option 2: Local (3 Commands)
 
 ```bash
-git clone https://github.com/yksanjo/github-repo-agent.git
-cd github-repo-agent && pip install -r requirements.txt
+git clone https://github.com/yksanjo/repopulse.git
+cd repopulse && pip install -r requirements.txt
 python web_server.py  # http://localhost:5001
 ```
 
 ### Option 3: Docker
 
 ```bash
-docker run -p 5001:5001 yksanjo/github-repo-agent
+docker run -p 5001:5001 yksanjo/repopulse
 ```
 
 ---
@@ -178,7 +178,7 @@ Add to `~/.mcp.json`:
   "mcpServers": {
     "repo-pulse": {
       "command": "python",
-      "args": ["/path/to/github-repo-agent/mcp_server.py"]
+      "args": ["/path/to/repopulse/mcp_server.py"]
     }
   }
 }
@@ -253,7 +253,7 @@ POST /api/compare
 
 ## Metrics
 
-![GitHub stars](https://img.shields.io/github/stars/yksanjo/github-repo-agent?style=flat-square)
+![GitHub stars](https://img.shields.io/github/stars/yksanjo/repopulse?style=flat-square)
 ![Repos analyzed](https://img.shields.io/badge/repos%20analyzed-50K+-blue?style=flat-square)
 ![Avg analysis time](https://img.shields.io/badge/avg%20time-8s-green?style=flat-square)
 
